@@ -66,3 +66,32 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+
+start_btn.onclick = ()=>{
+    info_box.classList.add("activeInfo");
+}
+
+exit_btn.onclick = ()=>{
+    info_box.classList.remove("activeInfo");
+}
+
+continue_btn.onclick = ()=>{
+    info_box.classList.remove("activeInfo");
+    quiz_box.classList.add("activeQuiz");
+    showQuestions(0);
+    queCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+}
+
+var timeValue = 15;
+var que_count = 0;
+var que_numb = 1;
+var userScore = 0;
+var counter;
+var counterLine;
+var widthValue= 0;
+
+const restart_quiz = result_box.querySelector(".buttons . restart");
+const quit_quiz = result_box.querySelector(".buttons .quit")
+
