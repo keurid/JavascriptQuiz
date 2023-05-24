@@ -95,3 +95,29 @@ var widthValue= 0;
 const restart_quiz = result_box.querySelector(".buttons . restart");
 const quit_quiz = result_box.querySelector(".buttons .quit")
 
+restart_quiz.onclick = ()=>{
+    quiz_box.classList.add("activeQuiz");
+    result_box.classList.remove("activeResult");
+    timeValue = 15;
+    que_count = 0;
+    que_numb = 1;
+    userScore = 0;
+    widthValue = 0;
+    showQuestions(que_count);
+    queCounter(que_numb);
+    clearInterval(counter);
+    clearInterval(counterLine);
+    startTimer(timeValue);
+    startTimerLine(widthValue);
+    timeText.textContent = "Time Left";
+    next_btn.classList.remove("show");
+}
+
+quit_quiz.onclick = ()=>{
+    window.location.reload();
+}
+
+const next_btn = document.querySelector("footer .next_btn");
+const bottom_ques_counter = document.querySelector("footer .total_que")
+
+
