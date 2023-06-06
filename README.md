@@ -9,7 +9,7 @@ I learned about JavaScript and leared about CSS in a deeper more complex way tha
 
 To get the development environment running, first you need to clone the repository by going to 
 https://github.com/keurid/JavascriptQuiz then copying the link the green code button, make sure it's on SSH then click the copy button!
-After that you can open your Git Bash to clone to repository and access this repository by typing this "git clone git@github.com:keurid/PasswordGenerator.git"
+After that you can open your Git Bash to clone to repository and access this repository by typing this "git clone git@github.com:keurid/JavascriptQuiz.git"
 
 ## Usage
 
